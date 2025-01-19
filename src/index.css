@@ -4,3 +4,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* .feature{
+    clip-path: polygon(28% 5%, 63% 1%, 81% 2%, 100% 2%, 100% 91%, 79% 100%, 43% 96%, 7% 100%, 0% 35%, 0 0);
+} */
