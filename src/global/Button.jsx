@@ -1,6 +1,6 @@
 import React from "react";
 
-function Button({ className, onClick, px, py, text = "udoy" }) {
+function Button({ className,children ,onClick, px, py, text = "udoy" }) {
   return (
     <button
       onClick={onClick}
@@ -8,7 +8,8 @@ function Button({ className, onClick, px, py, text = "udoy" }) {
         py ? py : "py-2"
       }`}
     >
-      {text}
+        {children && children}
+      <span>{text}</span>
     </button>
   );
 }

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
 import Logo from "../../global/Logo";
 import { Link, useLocation } from "react-router";
 import Button from "../../global/Button";
 import { RiMenu2Fill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
+import { useState } from "react";
 
 const navList = [
   {
@@ -69,7 +69,7 @@ function Navbar() {
         </div>
       </nav>
       {isMobileNav && (
-        <div className="space-y-2 py-5 flex flex-col md:hidden">
+        <div className="space-y-2 py-5 flex flex-col container md:hidden">
           {navList &&
             navList.map(({ name, id }) => (
               <Link
