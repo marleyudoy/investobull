@@ -12,6 +12,7 @@ function Hero() {
     <section className="bg-primary-2 py-10">
       <div className="container">
         <Heading
+          large={true}
           center={true}
           title="We make it easy for everyone to invest"
           des="Investment is a term with several meanings related to finance and economics. The term relates to the accumulation of an assets in the forms of an expectation of the future profits."
