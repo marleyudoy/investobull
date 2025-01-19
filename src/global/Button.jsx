@@ -1,0 +1,16 @@
+import React from "react";
+
+function Button({ className, onClick, px, py, text = "udoy" }) {
+  return (
+    <button
+      onClick={onClick}
+      className={`${className && className} ${px ? px : "px-4"} ${
+        py ? py : "py-2"
+      }`}
+    >
+      {text}
+    </button>
+  );
+}
+
+export default Button;
