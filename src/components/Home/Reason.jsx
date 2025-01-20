@@ -34,7 +34,8 @@ function Reason() {
             GET STARTED IN MINUTES
           </h5>
           <h3 className="h3 text-white py-2">3 Main Reaosn to Choose us.</h3>
-          <img src={BorderImage} alt="" />
+          <div></div>
+          <img src={BorderImage} className="mx-auto" alt="" />
           <div className="mt-5">
             {accrodingItem.map((item) => (
               <According

@@ -47,13 +47,7 @@ const FirstCard = () => {
 };
 const SecondCard = () => {
   return (
-    <div className="container py-10 md:py-16 relative mt-20 bg-n-4 rounded-[30px] ">
-      <div className="absolute top-0 left-0 z-10">
-        <img className="" src={BG2} alt="" />
-      </div>
-      <div className="absolute right-0 top-0">
-        <img src={ball} alt="" />
-      </div>
+    <div className="container overflow-hidden py-10 md:py-16 relative mt-20 bg-n-4 rounded-[30px] ">
       <div className="flex flex-col md:flex-row relative z-20 items-center p-4 gap-10">
         <div className="flex-1">
           <h3 className="text-[16px] md:text-[18px] lg:text-[20px] text-white/90">
@@ -77,6 +71,13 @@ const SecondCard = () => {
             Already a member? <Link className="text-teal-400">Sign in</Link>
           </p>
         </div>
+      </div>
+      {/* background  */}
+      <div className="absolute top-0 left-0 z-10">
+        <img className="" src={BG2} alt="" />
+      </div>
+      <div className="absolute right-0 top-0">
+        <img src={ball} alt="" />
       </div>
     </div>
   );
@@ -114,7 +115,7 @@ const ThirdCard = () => {
         <img className="w-[100%] h-[100%]" src={ball2} alt="" />
       </div>
       <img
-        className="w-[100%] left-0 top-0 absolute h-[100%]"
+        className="w-[100%] hidden md:block left-0 top-0 absolute h-[100%]"
         src={BG2}
         alt=""
       />
@@ -127,7 +128,9 @@ function Freetrial() {
       {/* item 1  */}
       <FirstCard />
       {/* item 2  */}
+      <div className="px-3">
       <SecondCard />
+      </div>
       {/* item 3  */}
       <ThirdCard />
     </section>

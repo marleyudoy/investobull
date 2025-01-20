@@ -73,13 +73,17 @@ function Navbar() {
           )}
         </div>
       </nav>
+      {/* mobile nav  */}
       {isMobileNav && (
         <div className="space-y-2 py-5 flex flex-col container md:hidden">
           {navList &&
-            navList.map(({ name, id,link }) => (
+            navList.map(({ name, id, link }) => (
               <Link
-              to={link}
-                onClick={() => setActiveNavList(id)}
+                to={link}
+                onClick={() => {
+                  setActiveNavList(id);
+                  setIsMobileNav(!isMobileNav);
+                }}
                 className={`${
                   activeNavList === id
                     ? "text-white bg-primary-1/10"
