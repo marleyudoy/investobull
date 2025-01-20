@@ -2,7 +2,9 @@ import React from 'react'
 
 function Service() {
   return (
-    <div>Service</div>
+    <section className="flex bg-n-1 items-center justify-center h-screen text-4xl text-white">
+      <div>Service</div>
+    </section>
   )
 }
 

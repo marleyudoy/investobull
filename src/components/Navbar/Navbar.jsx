@@ -9,18 +9,22 @@ const navList = [
   {
     id: "Home",
     name: "Home",
+    link: "/home",
   },
   {
     id: "Service",
     name: "Service",
+    link: "/service",
   },
   {
     id: "Features",
     name: "Features",
+    link: "/feature",
   },
   {
     id: "Payment",
     name: "Payment",
+    link: "/payment",
   },
 ];
 
@@ -36,8 +40,9 @@ function Navbar() {
         <Logo />
         <div className="space-x-2 hidden md:block">
           {navList &&
-            navList.map(({ name, id }) => (
+            navList.map(({ name, id, link }) => (
               <Link
+                to={link}
                 onClick={() => setActiveNavList(id)}
                 className={`${
                   activeNavList === id
@@ -71,8 +76,9 @@ function Navbar() {
       {isMobileNav && (
         <div className="space-y-2 py-5 flex flex-col container md:hidden">
           {navList &&
-            navList.map(({ name, id }) => (
+            navList.map(({ name, id,link }) => (
               <Link
+              to={link}
                 onClick={() => setActiveNavList(id)}
                 className={`${
                   activeNavList === id
