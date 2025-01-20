@@ -7,12 +7,9 @@ import Image4 from "../../assets/home/Feature/img4.png";
 import Image5 from "../../assets/home/Feature/img5.png";
 import CompnayLogo from "../../assets/home/Logo.png"
 
-import Bh from "../../assets/home/Feature/Bh.png";
 import { MdOutlinePhoneIphone } from "react-icons/md";
-import Icon1 from "../../assets/home/Feature/Icon1.png";
-import Logo from "../../global/Logo";
+import Icon1 from "../../assets/home/Feature/icon1.png";
 
-const Card = () => {};
 
 const TextContent = ({ title, des }) => {
   return (
