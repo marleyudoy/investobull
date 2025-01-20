@@ -4,6 +4,8 @@ import Tick from "../../assets/home/service/tick.png";
 import Game from "../../assets/home/service/game.png";
 import Sheild from "../../assets/home/service/sheild.png";
 import TextCard from "../../global/TextCard";
+import Circle1 from "../../assets/home/circle1.png";
+import Circle2 from "../../assets/home/circle2.png";
 
 const serviceList = [
   {
@@ -27,7 +29,8 @@ const serviceList = [
 ];
 function Services() {
   return (
-    <section className="bg-primary-2 py-10">
+    <section className="bg-primary-2 relative py-10">
+
       {/* heading  */}
       <Heading
         title="Our Best ServicesFor Your Convinience"
@@ -45,6 +48,12 @@ function Services() {
           ))}
       </div>
       {/* service list end  */}
+      <div className="absolute top-0 hidden sm:block right-0" >
+        <img src={Circle1} alt="" />
+      </div>
+      <div className="absolute top-0">
+        <img src={Circle2} alt="" />
+      </div>
     </section>
   );
 }

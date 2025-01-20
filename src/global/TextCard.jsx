@@ -1,7 +1,6 @@
 import CardImage from "../assets/home/cardImage.png";
 
 function TextCard({ data, image, isBg, largeText }) {
-  console.log(largeText);
   const { id, title, icon, des } = data;
 
   const h2TextSize = `${

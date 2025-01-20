@@ -4,6 +4,8 @@ import Services from "./Services";
 import ShouldUse from "./ShouldUse";
 import Feature from "./Feature";
 import Reason from "./Reason";
+import Faq from "./Faq";
+import Freetrial from "./Freetrial";
 
 function Home() {
   return (
@@ -13,6 +15,8 @@ function Home() {
       <ShouldUse />
       <Feature />
       <Reason />
+      <Faq />
+      <Freetrial />
     </>
   );
 }
